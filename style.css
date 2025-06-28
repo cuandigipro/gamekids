@@ -1,0 +1,46 @@
+/* Menggunakan font Nunito yang lebih ramah untuk anak-anak */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #FFF9E5; /* cream muda */
+}
+/* Efek bayangan dan transisi yang lebih halus untuk tombol */
+.game-icon-button {
+    transition: all 0.3s ease-in-out;
+}
+.game-icon-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.game-icon-button:active {
+    transform: scale(1);
+}
+/* --- STYLING UNTUK SPLASH SCREEN --- */
+#splash-screen {
+    transition: opacity 0.8s ease-in-out;
+}
+.fade-out {
+    opacity: 0;
+}
+.animated-text {
+    font-weight: 900;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-clip-animation 2s linear infinite;
+}
+@keyframes text-clip-animation {
+    to {
+        background-position: 200% center;
+    }
+} 
